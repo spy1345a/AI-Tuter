@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.venv
+env/
+venv/
+myenv/
+*.swp
+
+# Uploaded files
+uploads/
+text-extract/
+
+# Model binaries
+models/*.gguf
+
+# VS Code
+.vscode/

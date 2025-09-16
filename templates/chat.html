@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat with AI</title>
+</head>
+<body>
+    <h1>Chat with AI</h1>
+
+    <!-- Conversation history -->
+    <div>
+        {% if conversation %}
+            <ul>
+                {% for speaker, msg in conversation %}
+                    <li><strong>{{ speaker }}:</strong> {{ msg }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No conversation yet. Ask something below!</p>
+        {% endif %}
+    </div>
+
+    <!-- Form to send a new message -->
+    <form method="POST">
+        <input type="text" name="message" required autofocus placeholder="Type your question here..." style="width: 70%;">
+        <button type="submit">Send</button>
+    </form>
+
+    <!-- Link back to dashboard -->
+    <p><a href="{{ url_for('dashboard') }}">⬅ Back to Dashboard</a></p>
+</body>
+</html>
