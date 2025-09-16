@@ -1,44 +1,67 @@
 # 🤖 AI-Tuter 🌟
 
-AI-Tuter is an **AI-powered tutoring application** designed to provide personalized learning experiences.  
-Built with **Python**, **HTML**, and **CSS**, it leverages the `llama.cpp` library for advanced AI functionalities. 🚀
+AI-Tuter is an **AI-powered tutoring app** that provides personalized learning using AI! 🚀
 
 ---
 
-## ✨ Features
+## 🧩 Step 0: Download AI Model
 
-- 🧑‍🏫 **Interactive AI Tutoring**: Engage with an AI tutor capable of answering questions and explaining concepts.  
-- 🖥️ **User-Friendly Interface**: Clean and intuitive web interface built with HTML & CSS.  
-- ⚡ **Efficient Backend**: Python-based backend ensuring smooth and responsive interactions.  
-- 🐍 **Lightweight AI Integration**: Uses `llama.cpp` for efficient AI processing without heavy resources.  
+📦 Before using the app, download the AI model from **Hugging Face**:  
+
+1️⃣ Go to the Hugging Face model page you want to use.  
+2️⃣ Download the model files.  
+3️⃣ Create a folder called `modul` in the root directory of this project.  
+4️⃣ Place all downloaded model files inside the `modul` folder.
+
+AI-Tuter/
+│
+└── modul/ # Place your downloaded Hugging Face model here
+
+yaml
+Copy code
 
 ---
 
-## 🛠️ Installation
+## 🧩 Step 1: Clone the Repository
 
-1️⃣ Clone the repository:
+📂 Copy the repository to your local machine:
 
-```
+```bash
 git clone https://github.com/spy1345a/AI-Tuter.git
 cd AI-Tuter
+🛠️ Step 2: Install Dependencies
+💻 Install all required Python packages:
 
-2️⃣ Install dependencies:
-
+bash
+Copy code
 pip install -r requirements.txt
-3️⃣ Run the application:
+⚡ Step 3: Run the Application
+🚀 Start the app with:
 
-
+bash
+Copy code
 python app.py
-4️⃣ Open your browser at http://127.0.0.1:5000 🌐
+Open your browser and go to: http://127.0.0.1:5000 🌐
 
-📁 Project Structure
-
+📁 Step 4: Project Structure
+php
+Copy code
 AI-Tuter/
 │
 ├── app.py            # Main application file
 ├── requirements.txt  # Python dependencies
 ├── llamacpp/         # AI processing library
+├── modul/            # Your Hugging Face model files
 ├── static/           # CSS, JS, images
 └── templates/        # HTML templates
+✨ Features
+🧑‍🏫 Interactive AI Tutoring
+
+🖥️ User-Friendly Interface
+
+⚡ Efficient Backend
+
+🐍 Lightweight AI Integration
+
 📝 License
-This project is licensed under the MIT License. See LICENSE for details. 📜
+This project is under MIT License. See LICENSE 📜
