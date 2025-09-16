@@ -3,19 +3,61 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.env
-*.venv
-env/
-venv/
-myenv/
+*.py~*
+*$py.class
 *.swp
+*.swo
 
-# Uploaded files
-uploads/
-text-extract/
+# Virtual Environment
+myenv/
+venv/
+env/
+ENV/
 
-# Model binaries
-models/*.gguf
-
-# VS Code
+# IDE and Editor Files
+.idea/
 .vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Build and Package Files
+dist/
+build/
+*.egg-info/
+*.egg
+*.whl
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Logs and Temporary Files
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Model Directory (AI models - do not commit)
+models/
+
+# Uploads Directory (user uploaded files)
+uploads/
+
+# Environment Variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Node.js (if applicable)
+node_modules/
+
+# Docker
+docker-compose.override.yml
+Dockerfile
