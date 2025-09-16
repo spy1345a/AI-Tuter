@@ -18,18 +18,16 @@ Built with **Python**, **HTML**, and **CSS**, it leverages the `llama.cpp` libra
 
 1️⃣ Clone the repository:
 
-```bash
+```
 git clone https://github.com/spy1345a/AI-Tuter.git
 cd AI-Tuter
-2️⃣ Install dependencies:
 
-bash
+2️⃣ Install dependencies:
 Copy code
 pip install -r requirements.txt
 3️⃣ Run the application:
 
 bash
-Copy code
 python app.py
 4️⃣ Open your browser at http://127.0.0.1:5000 🌐
 
