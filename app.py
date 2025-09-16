@@ -185,7 +185,7 @@ def pool_extracted_files():
 
     return pooled_path
 
-def truncate_context(context, max_chars=4000):
+def truncate_context(context, max_chars=5000):
     """Keep only the last max_chars of text to fit model context"""
     return context[-max_chars:] if len(context) > max_chars else context
 
@@ -219,7 +219,7 @@ Answer:"""
             "models/llama.gguf",
             prompt,
             "-t", "4",
-            "-c", "2048",
+            "-c", "5000",
             "--temp", "0.8",
             "--color", "false"
         ],

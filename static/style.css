@@ -10,7 +10,49 @@ body {
     background-color: #f5f7fa;
     color: #333;
     line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Login page specific */
+body:not(.dashboard-body):not(.chat-body) {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
+    margin: 0;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-form h2 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 /* Container */
@@ -21,6 +63,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    min-height: 100vh;
 }
 
 /* Header */
@@ -69,6 +112,7 @@ main {
 /* Flash messages */
 .flash-messages {
     margin-bottom: 25px;
+    margin-top: 20px;
 }
 
 .dashboard-messages {
@@ -120,25 +164,6 @@ main {
     content: "ℹ️";
 }
 
-/* Sections */
-section {
-    margin-bottom: 35px;
-}
-
-section h2 {
-    color: #333;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #eee;
-}
-
-.file-count {
-    color: #666;
-    font-size: 1rem;
-    font-weight: normal;
-}
-
 /* Input groups */
 .input-group {
     display: flex;
@@ -156,6 +181,7 @@ section h2 {
     font-size: 1rem;
     transition: all 0.3s ease;
     min-width: 200px;
+    width: 100%;
 }
 
 .form-input:focus, .file-input:focus, .message-input:focus {
@@ -177,6 +203,7 @@ section h2 {
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(37, 117, 252, 0.3);
     min-width: 120px;
+    width: 100%;
 }
 
 .login-button:hover, .send-button:hover, .upload-button:hover {
@@ -221,7 +248,7 @@ section h2 {
 }
 
 .drop-zone:hover {
-    background: rgba(33, 150, 243, 0.1);
+    background: rgba(33, 150, 252, 0.1);
     border-color: #1976d2;
 }
 
@@ -343,51 +370,6 @@ section h2 {
     flex: 1;
 }
 
-/* Login page specific */
-body.login-page {
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.login-container {
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-}
-
-.login-form {
-    background: white;
-    padding: 40px 30px;
-    border-radius: 12px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    animation: slideUp 0.5s ease-out;
-}
-
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.login-form h2 {
-    margin-bottom: 30px;
-    color: #333;
-    font-size: 2rem;
-    font-weight: 600;
-}
-
 /* Footer */
 footer {
     padding: 20px 30px;
@@ -404,7 +386,7 @@ footer {
 
 /* Responsive design */
 @media (max-width: 768px) {
-    body {
+    body:not(.dashboard-body):not(.chat-body) {
         padding: 10px;
     }
     
@@ -446,7 +428,7 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .login-container {
+    body:not(.dashboard-body):not(.chat-body) {
         padding: 15px;
     }
     
