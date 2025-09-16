@@ -44,19 +44,16 @@ build/
 *.bak
 
 # Model Directory (AI models - do not commit)
-models/
+models/*
 
 # Uploads Directory (user uploaded files)
-uploads/
+uploads/*
 
 # Environment Variables
 .env
 .env.local
 .env.development
 .env.production
-
-# Node.js (if applicable)
-node_modules/
 
 # Docker
 docker-compose.override.yml
